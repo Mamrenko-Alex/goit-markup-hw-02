@@ -23,17 +23,8 @@ body {
   background-color: var(--white);
 }
 
-ul,
-ol {
+.list {
   list-style-type: none;
-}
-
-a,
-a:hover,
-a:focus,
-a:visited,
-a:active {
-  text-decoration: none;
 }
 
 .team {
@@ -51,6 +42,7 @@ a:active {
 }
 
 .link {
+  text-decoration: none;
   color: var(--dark-color);
 }
 
@@ -61,11 +53,12 @@ a:active {
 
 /* ========== LOGO ========== */
 .site-logo {
+  text-decoration: none;
   color: var(--dark-color);
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
@@ -91,7 +84,7 @@ a:active {
   letter-spacing: 1.12px;
 }
 
-h2 {
+.section-header {
   color: var(--dark-color);
   text-align: center;
   font-size: 36px;
@@ -101,7 +94,7 @@ h2 {
   text-transform: capitalize;
 }
 
-h3 {
+.card-header {
   color: var(--dark-color);
   font-size: 20px;
   font-weight: 500;
@@ -114,9 +107,8 @@ h3 {
 .cta-button {
   /* Button Frame */
   background-color: var(--primary-color);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   /* Button Text */
+  cursor: pointer;
   color: var(--white);
   font-family: var(--primary-font);
   font-size: 16px;
@@ -126,9 +118,13 @@ h3 {
   letter-spacing: 0.64px;
 }
 
+.cta-button:hover,
+.cta-button:focus {
+  background-color: var(--pressed-color);
+}
+
 .filter-button {
   /* Button Frame */
-  border-radius: 4px;
   border: 1px solid var(--accent-color);
   background-color: var(--light-background-color);
   /* Button Text */
@@ -141,13 +137,9 @@ h3 {
 /* ========== CARDS ========== */
 .team-list .teammate {
   background-color: var(--white);
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.porjects-list .project {
+.list .project {
   border: 1px solid var(--accent-color);
   background: var(--white);
 }
