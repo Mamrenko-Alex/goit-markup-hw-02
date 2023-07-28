@@ -3,6 +3,7 @@
   --primary-color: #4d5ae5;
   --pressed-color: #404bbf;
   --dark-color: #2e2f42;
+  --primary-text-color: #434455;
   --subtle-text-color: #8e8f99;
   --white: #ffffff;
   --accent-color: #e7e9fc;
@@ -19,12 +20,16 @@ body {
   line-height: 1.5;
   letter-spacing: 0.32px;
   font-style: normal;
-  color: #434455;
+  color: var(--primary-text-color);
   background-color: var(--white);
 }
 
 .list {
   list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .team {
@@ -41,14 +46,13 @@ body {
   font-weight: 500;
 }
 
+.link-to {
+  color: var(--dark-color);
+}
+
 .link-to:hover,
 .link-to:focus {
   color: var(--pressed-color);
-}
-
-.link {
-  text-decoration: none;
-  color: var(--dark-color);
 }
 
 #active-page {
@@ -80,6 +84,15 @@ body {
 /* ========== ADDRESS ========== */
 .company-contacts {
   font-style: normal;
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--pressed-color);
+}
+
+.contact {
+  color: var(--primary-text-color);
 }
 
 .contact:hover,
@@ -166,6 +179,10 @@ button {
 .list .project {
   border: 1px solid var(--accent-color);
   background: var(--white);
+}
+
+.project-category {
+  color: var(--primary-text-color);
 }
 /* ========== /CARDS ========== */
 
