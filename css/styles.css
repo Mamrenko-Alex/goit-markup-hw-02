@@ -41,6 +41,11 @@ body {
   font-weight: 500;
 }
 
+.link-to:hover,
+.link-to:focus {
+  color: var(--pressed-color);
+}
+
 .link {
   text-decoration: none;
   color: var(--dark-color);
@@ -54,7 +59,7 @@ body {
 /* ========== LOGO ========== */
 .site-logo {
   text-decoration: none;
-  color: var(--dark-color);
+  color: var(--primary-color);
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -63,14 +68,23 @@ body {
   text-transform: uppercase;
 }
 
-.logo-brand-color {
-  color: var(--primary-color);
+.second-color-header {
+  color: var(--dark-color);
+}
+
+.second-color-footer {
+  color: var(--light-background-color);
 }
 /* ========== /LOGO ========== */
 
 /* ========== ADDRESS ========== */
 .company-contacts {
   font-style: normal;
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--pressed-color);
 }
 /* ========== /ADDRESS ========== */
 
@@ -94,7 +108,9 @@ body {
   text-transform: capitalize;
 }
 
-.card-header {
+.benefit-header,
+.teammate-name,
+.project-name {
   color: var(--dark-color);
   font-size: 20px;
   font-weight: 500;
@@ -104,18 +120,22 @@ body {
 /* ========== /HEADERS ========== */
 
 /* ========== BUTTONS ========== */
-.cta-button {
-  /* Button Frame */
-  background-color: var(--primary-color);
-  /* Button Text */
-  cursor: pointer;
-  color: var(--white);
+button {
   font-family: var(--primary-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cta-button {
+  /* Button Frame */
+  background-color: var(--primary-color);
+  /* Button Text */
+  color: var(--white);
 }
 
 .cta-button:hover,
@@ -129,13 +149,17 @@ body {
   background-color: var(--light-background-color);
   /* Button Text */
   color: var(--primary-color);
-  text-align: center;
-  letter-spacing: 0.64px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white);
+  background-color: var(--pressed-color);
 }
 /* ========== /BUTTONS ========== */
 
 /* ========== CARDS ========== */
-.team-list .teammate {
+.teammate {
   background-color: var(--white);
 }
 
@@ -150,8 +174,7 @@ body {
   background-color: var(--dark-color);
 }
 
-.footer-slogan,
-.site-footer .site-logo {
+.footer-slogan {
   color: var(--light-background-color);
 }
 /* ========== /FOOTER ========== */
