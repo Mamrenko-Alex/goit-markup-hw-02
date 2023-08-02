@@ -16,9 +16,8 @@
 body {
   font-family: var(--primary-font);
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   font-style: normal;
   color: var(--primary-text-color);
   background-color: var(--white);
@@ -70,7 +69,7 @@ body {
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
-  letter-spacing: 0.54px;
+  letter-spacing: 0.034em;
   text-transform: uppercase;
 }
 
@@ -108,18 +107,16 @@ body {
   color: var(--white);
   text-align: center;
   font-size: 56px;
-  font-weight: 700;
   line-height: 1.07;
-  letter-spacing: 1.12px;
+  letter-spacing: 0.070em;
 }
 
 .section-header {
   color: var(--dark-color);
   text-align: center;
   font-size: 36px;
-  font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.045em;
   text-transform: capitalize;
 }
 
@@ -130,7 +127,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.025em;
 }
 /* ========== /HEADERS ========== */
 
@@ -141,7 +138,7 @@ button {
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.040em;
   text-align: center;
   cursor: pointer;
 }
@@ -179,7 +176,6 @@ button {
 }
 
 .list .project {
-  border: 1px solid var(--accent-color);
   background: var(--white);
 }
 
